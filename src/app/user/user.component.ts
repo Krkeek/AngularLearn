@@ -9,4 +9,23 @@ import { Component } from '@angular/core';
 })
 export class UserComponent {
 
+  users = [
+    {
+      id: 1,
+      name: 'Ahmad'
+    },
+    {
+      id: 2,
+      name: 'Chris'
+    },
+    {
+      id: 3,
+      name: 'Layla'
+    },
+    {
+      id: 4,
+      name: 'Mona'
+    }
+  ];
+
 }
