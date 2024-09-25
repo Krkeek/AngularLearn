@@ -1,31 +1,24 @@
-import { Component } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {UserType} from "../../../declaration";
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
 export class UserComponent {
+  @Input() user: UserType = {
+    id: 0,
+    name: "",
+  }
 
-  users = [
-    {
-      id: 1,
-      name: 'Ahmad'
-    },
-    {
-      id: 2,
-      name: 'Chris'
-    },
-    {
-      id: 3,
-      name: 'Layla'
-    },
-    {
-      id: 4,
-      name: 'Mona'
-    }
-  ];
+  @Output() messageEvent = new EventEmitter<string>();
+
+  sendMessage() {
+    this.messageEvent.emit('Hello from the Child Component!');
+  }
 
 }

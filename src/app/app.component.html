@@ -1,8 +1,11 @@
 <h1>{{title}} -{{city}}</h1>
 
+<p>{{message}}</p>
 
 @if (isLoggedIn){
-  <app-user />
+
+
 }
+<button (click)="greet()">Greet</button>
 
-
+<router-outlet />
