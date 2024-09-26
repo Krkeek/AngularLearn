@@ -4,16 +4,19 @@
   background-color: var(--background-color);
 }
 
-.TopBar {
-  height: 10%;
-  width: 100%;
-}
 .ContentContainer {
   height: 87%;
   width: 100%;
+  display: flex;
 }
 
-.Footer{
-  height: 3%;
-  width: 100%;
+.LeftDiv {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.RightDiv {
+  width: 65%;
+  height: 100%;
 }

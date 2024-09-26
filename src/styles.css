@@ -9,3 +9,17 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Target the stepper header numbers */
+.mat-step-icon {
+  background-color: var(--primary-color) !important;
+  color: white;
+}
+
+.mat-step-header.mat-active .mat-step-icon {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
