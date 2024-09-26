@@ -1,4 +1,4 @@
-  <mat-stepper class="StepperContainer" orientation="vertical" [linear]="!isLinear" #stepper>
+  <mat-stepper class="StepperContainer" orientation="vertical" [linear]="true" #stepper>
     <mat-step [stepControl]="companyInformation">
       <form [formGroup]="companyInformation">
         <ng-template matStepLabel>Company Information</ng-template>
@@ -11,8 +11,8 @@
           <mat-form-field class="InputField">
             <mat-label>Industry</mat-label>
             <mat-select formControlName="industry">
-              <mat-option value="one">Software Development</mat-option>
-              <mat-option value="two">Marketing</mat-option>
+              <mat-option value="Software Development">Software Development</mat-option>
+              <mat-option value="Marketing">Marketing</mat-option>
             </mat-select>
           </mat-form-field>
         </div>
@@ -47,9 +47,6 @@
             <input matInput formControlName="passwordConfirmation"  required>
           </mat-form-field>
 
-
-
-
           <mat-form-field class="EmailInput">
             <mat-label>Email</mat-label>
             <input matInput formControlName="email" required>
@@ -81,16 +78,56 @@
       </form>
     </mat-step>
 
-
-
     <mat-step>
       <ng-template matStepLabel>Summary</ng-template>
-      <p>You are now done.</p>
+      <div class="Summary">
+
+        <div class="SummaryRow">
+          <div class="SummaryColQ">
+            Company name
+          </div>
+          <div class="SummaryCol">
+            {{getFormData().companyName}}
+          </div>
+        </div>
+        <div class="SummaryRow">
+          <div class="SummaryColQ">
+            Industry
+          </div>
+          <div class="SummaryCol">
+            {{getFormData().industry}}
+          </div>
+        </div>
+        <div class="SummaryRow">
+          <div class="SummaryColQ">
+            Name
+          </div>
+          <div class="SummaryCol">
+            {{getFormData().name}}
+          </div>
+        </div>
+        <div class="SummaryRow">
+          <div class="SummaryColQ">
+            Username
+          </div>
+          <div class="SummaryCol">
+            {{getFormData().username}}
+          </div>
+        </div>
+        <div class="SummaryRow">
+          <div class="SummaryColQ">
+            Email
+          </div>
+          <div class="SummaryCol">
+            {{getFormData().email}}
+          </div>
+        </div>
+
+      </div>
       <div class="ButtonGroup">
         <button class="StepperButton" mat-button matStepperPrevious>Back</button>
         <button class="StepperButton StepperButtonM" mat-button (click)="stepper.reset()">Reset</button>
         <button class="StepperButton StepperButtonM" mat-button (click)="onSubmit()">Register</button>
-
       </div>
     </mat-step>
 

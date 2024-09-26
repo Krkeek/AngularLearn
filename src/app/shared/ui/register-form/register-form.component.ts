@@ -45,11 +45,20 @@ export class RegisterFormComponent {
   });
 
 
+  getFormData() {
+    return {
+      companyName: this.companyInformation.controls.companyName.value,
+      industry: this.companyInformation.controls.industry.value,
+      name: this.personalInformation.controls.name.value,
+      username: this.personalInformation.controls.username.value,
+      email: this.personalInformation.controls.email.value,
+
+    }
+  }
+
   onSubmit(){
     console.log(this.companyInformation);
     console.log(this.personalInformation);
   }
 
-
-  isLinear = false;
 }
