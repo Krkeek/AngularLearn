@@ -1,10 +1,16 @@
 import { Routes } from '@angular/router';
-import {UserComponent} from "./user/user.component";
+import {HomePageComponent} from "./routes/home-page/home-page.component";
 
 export const routes: Routes = [
+
   {
-    path: 'user',
-    component: UserComponent,
-    title: 'User Component',
+    path: '',
+    redirectTo: 'homePage',
+    pathMatch: 'full'
   },
+  {
+    path: 'homePage',
+    component: HomePageComponent,
+    title: 'Home',
+  }
 ];

@@ -1,0 +1,19 @@
+.PageContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.TopBar {
+  height: 10%;
+  width: 100%;
+}
+.ContentContainer {
+  height: 87%;
+  width: 100%;
+}
+
+.Footer{
+  height: 3%;
+  width: 100%;
+}

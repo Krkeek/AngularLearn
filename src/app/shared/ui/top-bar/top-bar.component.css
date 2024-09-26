@@ -1,0 +1,20 @@
+.Container {
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 2rem;
+}
+
+.Logo {
+  width: 20%;
+  height: auto;
+}
+
+.Title {
+  color: var(--text-color);
+  font-size: 1rem
+}

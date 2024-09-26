@@ -1,3 +1,11 @@
+:root{
+  --background-color: #FAF9FD;
+  --test-color: red;
+  --primary-color: #171C4B;
+  --text-color: white;
+}
+
 *{
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
