@@ -15,8 +15,32 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  overflow: scroll;
 }
 .RightDiv {
   width: 65%;
   height: 100%;
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .PageContainer {
+    min-height: 100vh;
+  }
+
+  .ContentContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .LeftDiv {
+    width: 95%;
+    overflow: unset;
+  }
+  .RightDiv {
+    width: 95%;
+  }
+
 }

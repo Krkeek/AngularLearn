@@ -1,0 +1,44 @@
+.Container {
+  width: 90%;
+  height: 90%;
+  max-height: 90%;
+  overflow: scroll;
+  margin-top: 5%;
+  position: relative;
+}
+
+.Row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--table-primary-color);
+  height: 7%;
+
+}
+
+.Secondary {
+  background-color: var(--table-secondary-color);
+
+}
+.UpperRow {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: sticky;
+  top: 0;
+
+}
+.Col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .Container {
+    margin: 0 auto;
+    font-size: 0.8rem;
+
+  }
+}

@@ -3,7 +3,9 @@
   --test-color: red;
   --primary-color: #171C4B;
   --text-color: white;
-  --secondary-color: #f5f5f5
+  --secondary-color: #f5f5f5;
+  --table-primary-color: #CFD2DC;
+  --table-secondary-color: rgba(207, 210, 220, 0.5);
 
 }
 
@@ -24,4 +26,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-step-header.mat-active .mat-step-icon {
   background-color: var(--primary-color) !important;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+body {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+html {
+  scrollbar-width: none; /* Firefox */
 }

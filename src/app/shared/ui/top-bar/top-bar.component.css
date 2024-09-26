@@ -18,3 +18,14 @@
   color: var(--text-color);
   font-size: 1rem
 }
+
+@media screen and (max-width: 768px) {
+
+  .Logo {
+    width: 40%;
+  }
+  .Title {
+    font-size: 0.7rem
+  }
+
+}
