@@ -1,3 +1,4 @@
+
 .mat-stepper-vertical {
   margin-top: 8px;
 }
@@ -9,7 +10,41 @@
 .StepperContainer {
   background-color: transparent;
   margin-top: 20%;
+  width: 100%;
 }
 
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
 
+.InfoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.EmailInput {
+  width: 100%;
 
+}
+
+.StepperButton {
+  background-color: var(--secondary-color);
+}
+.StepperButtonM {
+  margin-left: 1%;
+}
+
+.ButtonGroup {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+.PasswordError {
+  font-size: 0.7rem;
+  position: absolute;
+  right: 0;
+}
